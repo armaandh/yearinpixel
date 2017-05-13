@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Year in Pixels</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Gochi+Hand" rel="stylesheet">
+
+
+
+
+</head>
+
+<body ng-app='myGrid'>
+	<div id="title">
+		Year in Pixels
+		<h1>{{myWelcome}}</h1>
+	</div>
+	<img src="faces.jpg" alt="faces" id="faces">
+	<div id="months">
+ 	J F M A M J J A S O N D
+	</div>
+	<div id="days">
+		1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+	</div>
+	<div class='content' ng-controller="GridController">
+
+		<div class='square' ng-repeat="color in getColors() track by $index" ng-class="color" ng-click="color=nextColor(color)" ng-mouseover="showText=true" ng-mouseleave="showText=false">
+			<span ng-show="showText">:)</span>
+			<br ng-if="($index+1)%12==0">
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+div.content{
+	margin: 20px;
+	display: flex;
+	flex-wrap:wrap;
+	width:500px;
+	padding-left: 200px;
+}
+
+div.square {
+	width: 7.5%;
+	height: 50px;
+	transition: background-color 1.5s ease;
+	line-height: 50px;
+	font-size: .85em;
+	text-align: center;
+	border: 0.5px solid #e2dede;
+}
+
+.black {
+	background-color: black;
+	color: white
+}
+
+.blue {
+	background-color: blue;
+	color: white;
+}
+
+.cyan {
+	background-color: cyan;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.green {
+	background-color: green;
+	color: white;
+}
+
+.magenta {
+	background-color: magenta;
+	color: white;
+}
+
+.red {
+	background-color: red;
+	color: white;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.white{
+	background-color: white;
+}
+#title{
+	float: right;
+	position: absolute;
+	font-family: 'Cookie', cursive;
+	font-size: 80px;
+	right: 20%;
+}
+#faces{
+	float: right;
+	position: absolute;
+	right: 25%;
+	top: 20%;
+}
+#days{
+	font-family: 'Gochi Hand', cursive;
+	width: 5px;
+	left: 200px;
+	position: relative;
+	line-height: 53px;
+	height: auto;
+	float: left;
+}
+#months{
+	padding-top: 25px;
+	padding-left: 240px;
+	word-spacing: 25px;
+	font-size: 18px;
+	font-family: 'Gochi Hand', cursive;
+}
